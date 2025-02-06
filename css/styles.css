@@ -1,0 +1,145 @@
+body {
+  background-color: rgb(225, 248, 225);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  margin: 0px;
+  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+/* Set the background color dark, text white, and align center */
+/* You will notice that the font is still the default link styling*/
+/* Apply flex to add space between logo and navbar items  */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgb(36, 61, 61);
+}
+
+/* Logo Styling */
+.site-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Styling the navigation links with no underline, white color, and bold text for better visibility and emphasis. */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Align the navbar items inline and remove list styling */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adding horizontal margin between navigation items for better spacing and readability. */
+.navbar ul li {
+  margin: 0 15px;
+}
+
+/* Styling the main content area with padding */
+.site-main {
+  padding: 20px;
+}
+
+/* Center the content, add padding, round the corners, adjust background and text colors */
+.welcome {
+  text-align: center; /* Centers the content */
+  padding: 40px 20px; /* Adds padding around the section */
+  border-radius: 25px; /* Adds rounded corners */
+  background-color: white; /* Sets a light gray background color */
+  color: rgb(36, 61, 61); /* Sets the text color to a dark green */
+}
+
+.welcome p {
+  font-size: 1.2rem; /* Sets the font size for the paragraph */
+  line-height: 1.6; /* Improves readability */
+} 
+
+/* Style background of events section */
+.events {
+  margin-top: 20px; /* Adds spacing from header */
+  padding: 40px 20px; /* Adds padding around the section */
+  background-color: white; /* Sets a white background */
+  border-radius: 25px; /* Adds rounded corners */
+}
+
+
+/* Style individual event */
+.event {
+  padding: 20px; /* Adds padding around the event */
+  text-align: center; /* Centers the text */
+  border-radius: 15px; /* Adds rounded corners */
+  border: black 1px solid; /* Adds a border around the event */
+  max-width: 300px; /* Sets a maximum width */
+}
+
+.event img {
+  width: 100%; /* Makes the image fill the card */
+  border-radius: 8px; /* Matches the rounded corners of the card */
+  margin-bottom: 10px; /* Adds space below the image */
+}
+
+/* Style the event cards into a grid */
+.event-grid {
+  display: grid; /* Uses CSS Grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Sets the columns to be 300px wide and collapse when the screen is smaller */
+  gap: 20px; /* Adds space between the columns */
+}
+
+
+
+/* Example using Flexbox */
+/* Style the event cards into a flexbox layout */
+.event-section {
+  display: flex; /* Uses Flexbox */
+  flex-wrap: wrap; /* Allows the items to wrap to the next line */
+  justify-content: space-around; /* Adds space between the items */
+  gap: 20px; /* Adds space between the items */
+}
+
+footer {
+  background: #333; /* Set the background color of the footer to a dark gray */
+  color: #fff; /* Set the text color of the footer to white */
+  text-align: center; /* Center the text in the footer */
+  padding: 10px 0; /* Add padding of 10px on top and bottom of the footer */
+}
+
+.hero {
+  /* Set the background image and styling */
+  background-image: url('https://picsum.photos/1200/600'); /* Replace with your image URL */
+  border-radius: 25px; /* Adds rounded corners */
+  background-size: cover; /* Makes sure the image covers the entire area */
+  background-position: center; /* Centers the image */
+  height: 300px; /* Sets the height of the hero section */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Horizontally centers content */
+  align-items: center; /* Vertically centers content */
+  color: white; /* Text color */
+  text-align: center; /* Centers text */
+  margin-bottom: 20px; /* Adds space below the hero section */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem; /* Large font for the title */
+  margin: 0; /* Remove default margin */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for readability */
+}
+
+.hero-content p {
+  font-size: 1.2rem; /* Smaller font for the subtitle */
+  margin-top: 10px; /* Space above the paragraph */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+}
